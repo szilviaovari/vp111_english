@@ -79,7 +79,14 @@ a:hover {
     background-color: #94347c;
 }
 
+.btn-vp {
+    background-color: #f4e1c7;
+    color: #000;
+}
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .mobile {margin-bottom:20px;}
+    } */
+@media screen and (max-width: 767px) {
+    .mobile {min-height:50vh;}
     }

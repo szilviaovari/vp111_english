@@ -82,7 +82,29 @@ a:hover {
 .btn-vp {
     background-color: #f4e1c7;
     color: #000;
+    scale: 1;
+    transition: .25s;
 }
+
+.btn:hover {
+    background-color: #d0c0a9;
+    transform: scale(1.03);
+}
+
+a:hover>i {
+    -webkit-animation-name: fa-beat;
+    animation-name: fa-beat;
+-webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+-webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+-webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+-webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
 
 /* @media screen and (max-width: 767px) {
     .mobile {margin-bottom:20px;}

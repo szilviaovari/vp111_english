@@ -15,7 +15,8 @@ body{
 a{
     text-decoration: none;
     color: whitesmoke;
-    text-transform: italic;
+    /*text-transform: italic;*/
+    font-style: italic;
 }
 
 a:hover {
@@ -114,4 +115,18 @@ a:hover>i {
     } */
 @media screen and (max-width: 767px) {
     .mobile {min-height:50vh;}
+    .btn-fooldal {
+        width: min-content;
     }
+    .btn-fooldal-szoveg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .btn-fooldal {
+        top: 1%;
+        left: 1%;
+        scale: 0.7;
+    }
+}

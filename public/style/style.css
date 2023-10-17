@@ -137,30 +137,25 @@ a:hover>i {
         scale: 0.7;
     }
 }
-/* 
-.vp-elete-kiemelt {
+
+.vp-elete-kiemelt, .vp-elete-kiemelt a {
     color: #b34a98;
-} */
+    z-index:99;
+    text-decoration: none;
+    font-style: normal;
+}
 
 .hiddenimg {
     display: none;
     transition: .25s;
   }
   
-  .vp-elete-kiemelt {
-    font-weight: bold;
-    color: #F00;
-    z-index:99;
-    transition: .25s;
-  }
-  
-  .vp-elete-kiemelt a {
-    color: #F00;
-    text-decoration: none;
-    z-index: 99;
-  }
-  
-  .vp-elete-kiemelt:hover ~ .hiddenimg {
+  #k-i-1:hover ~ #h-i-1, #k-i-2:hover ~ #h-i-2, #k-i-3:hover ~ #h-i-3, #k-i-4:hover ~ #h-i-4, #k-i-5:hover ~ #h-i-5 {
     display: block;
     z-index: 98
   }
+
+
+#vp-elete-b {
+    height: 10vh;
+}

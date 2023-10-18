@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    background-size: cover;
+    color: #F4E1C7;
+}
+
+h1{
+    color: #F4E1C7;
+    text-align: center;
+    margin: 30px 0;
+    background-color: #994779;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.elem{
+    display: inline-block;
+    width: 15vw;
+ height: 60vh;
+ margin: 10px;
+}
+
+.terem{
+ background-color: white;
+ border: 5px solid rgb(44, 39, 39);
+ border-radius: 20px;
+ width: 15vw;
+ height: 40vh;
+display: inline-block;
+background-repeat: no-repeat;
+background-size: cover;
+box-shadow: 3px 3px rgba(44, 39, 39, 0.562);
+}
+
+
+.terem:hover {
+    transition: 1s;
+    transform: scale(0.8) rotate(-15deg);
+    cursor: pointer;
+    
+}
+
+label{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 0 auto;
+    color: white;
+}
+
+#teljeskepkeret{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.904);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#teljeskepkeret img{
+    max-height:100%;
+}
+
+#kilep,#balra,#jobbra,#kovetkezoTerem,#elozoTerem{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+#kilep{
+    bottom: 5%;
+    right: 50%;
+}
+
+#kovetkezoTerem {
+    bottom: 5%;
+    right: 45%;
+}
+
+#elozoTerem {
+    bottom: 5%;
+    left: 44%;
+}
+
+#balra, #jobbra {
+    font-size: 60px;
+    top: 50%;
+}
+
+#balra{
+    left: 5%;
+    padding: 20px;
+}
+
+#jobbra{
+    right: 5%;
+    padding: 20px;
+}
+
+img{
+    display: block;
+}
+
+#visszaGomb{
+    margin-left: 20px;
+    color:#F4E1C7 ;
+    float: left;
+    background-color: #994779;
+    padding: 10px 20px;
+    border-radius: 25px; 
+}

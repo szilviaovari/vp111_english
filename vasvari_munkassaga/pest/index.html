@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/style/vasvari_munkassaga.css">
+    <title>Vasvári 111 - Vasvári munkássága (Pest)</title>
+    <link rel="icon" type="image/x-icon" href="public/files/logo.svg">
+</head>
+<body>
+    <div id="pestTerkep">
+        <button id="elso_" class="gomb" onclick="mutat(1);" value="Off">
+            <div id="elso_Kartya" class="kartya">
+                <img src="../../public/files/Teleki_Blanka.jpg" alt="" height="200px">
+                <p><span class="helyszin">Telei Blanka által alapított nevelőintézet</span></p>
+                <p>1847-ben Vasvári ide került tanárnak.</p>
+            </div>  
+        </button>
+        <button id="masodik_" class="gomb" onclick="mutat(2);" value="Off">
+            <div id="masodik_Kartya" class="kartya">
+                <img src="../../public/files/a-penzugyminiszterium-epulete-1848-49-ben_ihj2r4tz.jpg" alt="" height="200px">
+                <p><span class="helyszin">Pénzügyminisztérium</span></p>
+                <p>1848. június 15-étől itt dolgozott titkárként Vasvári.</p>
+            </div>  
+        </button>
+        <button id="harmadik_" class="gomb" onclick="mutat(3);" value="Off">
+            <div id="harmadik_Kartya" class="kartya">
+                <img src="../../public/files/Pilvax_Pest_Preiszler.jpg" alt="" width="80%">
+                <p><span class="helyszin">Pilvax kávéház</span></p>
+                <p>Budapest egyik legikonikusabb helyszíne a '48-as forradalomból. Vasvári is a márciusi ifjak tagja volt, akik ebben a kávéházban kezdték meg a forradalmat.</p>
+            </div>  
+        </button>
+        <button id="negyedik_" class="gomb" onclick="mutat(4);" value="Off">
+            <p>1848. szeptember 28</p>
+            <div id="negyedik_Kartya" class="kartya">
+                <img src="../../public/files/batthyany_lajos.webp" alt="" width="85%">
+                1848. szeptember 28-án futárként a fővárosba érkezett Batthyány Lajos miniszterelnök levelével és azzal a hírrel, hogy Jellasics 24 órás fegyverszünetet kötött.
+            </div>  
+        </button>
+
+
+        <a href="../" id="main">Vissza a térképre</a>
+
+    </div>
+</body>
+</html>
+
+<script>
+    function mutat(hanyadikTemp){    
+    switch (hanyadikTemp){
+        case 1:
+            hanyadik = "elso_";
+            break;
+        case 2:
+            hanyadik = "masodik_";
+            break;
+        case 3:
+            hanyadik = "harmadik_";
+            break;
+        case 4:
+            hanyadik = "negyedik_";
+            break;
+    }
+    var currentValue = document.getElementById(hanyadik).value;
+
+    if(currentValue == "Off"){
+        document.getElementById(hanyadik).value="On";
+        document.getElementById(hanyadik+"Kartya").style.display = "block";
+
+    }
+    else{
+        document.getElementById(hanyadik).value="Off";
+        document.getElementById(hanyadik+"Kartya").style.display = "none";
+    }
+
+    var elem = document.getElementById(hanyadik);
+
+    
+    const listak = ["elso_", "masodik_", "harmadik_", "negyedik_"];
+    delete listak[hanyadikTemp-1];
+
+    
+    var state = document.getElementById(hanyadik).value;
+
+    for (var i in listak){
+        if(state == "On"){
+            document.getElementById(listak[i]).style.display = "none";
+        }
+        else{
+            document.getElementById(listak[i]).style.display = "block";
+
+        }
+    };
+
+
+}
+
+</script>

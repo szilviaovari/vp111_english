@@ -11,7 +11,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@master
 
-      - name: Compress Images
-        uses: calibreapp/image-actions@master
+      - name: Image Optimizer
+        uses: crush-pics/crush-pics-github-action@v1.0
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}

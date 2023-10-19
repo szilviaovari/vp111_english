@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: Inter;
+}
+
+h1 {
+    text-shadow: 2px 3px rgba(148, 52, 124, .5);
+}
+
+body{
+    background-color: #0c0c0c;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    /*text-transform: italic;*/
+    font-style: italic;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+.i-sbs1 {
+    max-height: auto;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.bg-nav {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(12,12,12, 1)), url('../files/vasvari.jpg');
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    width: 50%;
+}
+
+.cards>div:hover, #intro:hover, #vp-elete:hover {
+    transform: scale(1.025);
+}
+.cards>div, #intro, #vp-elete {
+    scale: 1;
+    transition: .25s;
+}
+
+#intro {
+    font-size: 1.5em;
+}
+#vp-elete {
+    font-size: 1.25em;
+}
+
+
+#vp-logo > img {
+    height: 7.5vh;
+    padding-bottom: 10px;
+    transition: .25s;
+}
+
+#vp-logo > img:hover {
+    transform: scale(1.03);
+}
+
+.bg-vp {
+    background-color: #94347c;
+}
+
+.card {
+    background-color: #94347c;
+}
+
+.current {
+    background-color: #94347c;
+}
+
+.btn-vp {
+    background-color: #f4e1c7;
+    color: #000;
+    scale: 1;
+    transition: .25s;
+}
+
+.btn:hover {
+    background-color: #d0c0a9;
+    transform: scale(1.03);
+}
+
+a:hover>i {
+    -webkit-animation-name: fa-beat;
+    animation-name: fa-beat;
+-webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+-webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+-webkit-animation-duration: var(--fa-animation-duration, 1s);
+    animation-duration: var(--fa-animation-duration, 1s);
+-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+-webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    animation-timing-function: var(--fa-animation-timing, ease-in-out);
+    }
+
+.btn-fooldal {
+    width: fit-content;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+/* @media screen and (max-width: 767px) {
+    .mobile {margin-bottom:20px;}
+    } */
+@media screen and (max-width: 767px) {
+    .mobile {min-height:50vh;}
+    .btn-fooldal {
+        width: min-content;
+    }
+    .btn-fooldal-szoveg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .btn-fooldal {
+        top: 1%;
+        left: 1%;
+        scale: 0.7;
+    }
+}
+
+.vp-elete-kiemelt, .vp-elete-kiemelt a {
+    color: #b34a98;
+    z-index:99;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.hiddenimg {
+    display: none;
+    transition: .25s;
+  }
+  
+  #k-i-1:hover ~ #h-i-1, #k-i-2:hover ~ #h-i-2, #k-i-3:hover ~ #h-i-3, #k-i-4:hover ~ #h-i-4, #k-i-5:hover ~ #h-i-5 {
+    display: block;
+    z-index: 98
+  }
+
+
+#vp-elete-b {
+    height: 10vh;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/style/vasvari_munkassaga.css">
+    <script src="script.js"></script>
+    <title>Vasvári 111 - Vasvári munkássága</title>
+    <link rel="icon" type="image/x-icon" href="public/files/logo.svg">
+</head>
+
+<body>
+
+    <h2 style="text-align: center; z-index: 7777777777777;  margin-top: 30px ;">A piros pontokra kattintva megtekintheti, hogy az adott helyszínen mi történt Vasvári Pállal</h2>
+
+    <div id="terkep">
+        
+        <button id="elso" class="gomb" onclick="mutat(1);" value="Off">
+            <div id="elsoKartya" class="kartya">
+                <img src="../public/files/szulohaz.jpg" alt="" height="200px">
+                <p><span class="helyszin">Tiszavasvári</span>, akkori nevén <span class="helyszin">Bűd</span>, vagy <span class="helyszin">Tiszabűd</span></p>
+                <p>Itt született 1826. július 14-én</p>
+            </div>    
+        </button>
+
+        <button id="masodik" class="gomb" onclick="mutat(2);" value="Off">
+            <div id="masodikKartya" class="kartya">
+                <img src="../public/files/Lead_2021142P2.jpg" alt="" height="200px">
+                <p><span class="helyszin">Nagykároly</span></p>
+                <P>1837-től az itteni piarista gimnázium diákja volt, és kiváló tanuló.</P>
+            </div>  
+        </button>
+
+        <button id="harmadik" class="gomb" onclick="mutat(3);" value="Off">
+            <a href="pest" id="linkPesthez">   </a>
+            <div id="harmadikKartya">                
+            </div>  
+        </button>
+
+        <button id="negyedik" class="gomb" onclick="mutat(4);" value="Off">
+            <div id="negyedikKartya" class="kartya">
+                <img src="../public/files/pe-malul-lacului-belis-fantanele.jpg" alt="" width="80%">
+                <p><span class="helyszin">Fântânele</span>, magyarul <span class="helyszin">Gyulakuta</span></p>
+                <p>Eme település mellett esett el 1849. július 6-án</p>
+            </div>  
+        </button>
+
+       <button id="otodik" class="gomb" onclick="mutat(5);" value="Off">
+            <div id="otodikKartya" class="kartya">
+                <img src="../public/files/velenceito.jpg" alt="" width="80%">
+                <p><span class="helyszin">Velence</span></p>
+                <p>1848. szeptember 27-én innen küldött tudósítást a Március Tizenötödikének: <span id="idezet">"seregünk már ide nehezen akart jönni, s általános a hír, miszerint innen tovább hátra nem fog vonulni"</span>
+            </div>  
+        </button>
+        <a href="../" id="main">Vissza a főoldalra</a>
+        </div>
+    
+</body>
+</html>

@@ -150,9 +150,15 @@ a:hover>i {
     transition: .25s;
   }
   
-  #k-i-1:hover ~ #h-i-1, #k-i-2:hover ~ #h-i-2, #k-i-3:hover ~ #h-i-3, #k-i-4:hover ~ #h-i-4, #k-i-5:hover ~ #h-i-5 {
+  #k-i-1:hover ~ #h-i-1, 
+  #k-i-2:hover ~ #h-i-2, 
+  #k-i-3:hover ~ #h-i-3, 
+  #k-i-4:hover ~ #h-i-4, 
+  #k-i-5:hover ~ #h-i-5 {
     display: block;
-    z-index: 98
+    z-index: 98;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;  
   }
 
 

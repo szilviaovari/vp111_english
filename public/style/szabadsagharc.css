@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: Inter;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#main{
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  padding-top: 18px;
+  background-color: #994779;
+  border: none;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.75);
+  height: 50px;
+  width: 150px;
+  border-radius: 6px;
+  color: #f4e1c7;
+  font-size: small;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#container {
+  background-image: url('../files/terkep.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 85%;
+  height: 100vh;
+  margin: auto auto;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.locationButton {
+  border-radius: 20px;
+  background-color: #994779;
+  color: #F4E1C7;
+  font-weight: bold;
+  height: 7.5%;
+  font-size: 25px;
+  border: none;
+}
+
+.locationInfo {
+  padding: 0px 10px;
+  border: 5px solid black;
+  border-radius: 20px;
+  background-color: #F4E1C7;
+  color: black;
+  font-size: 20px;
+  z-index: 50;
+  border: none;
+}
+
+#pestButton {
+  position: absolute;
+  top: 46%;
+  left: 41.5%;
+}
+
+#pestInfo {
+  position: absolute;
+  top: 53.5%;
+  left: 41.5%;
+}
+
+#budaButton {
+  position: absolute;
+  top: 46%;
+  left: 37.5%;
+}
+
+#budaInfo {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+}
+
+#pakozdButton {
+  position: absolute;
+  top: 51%;
+  left: 33%;
+}
+
+#pakozdInfo {
+  position: absolute;
+  top: 58.5%;
+  left: 10.5%;
+}
+
+#dravaButton {
+  position: absolute;
+  top: 95%;
+  left: 16%;
+}
+
+#dravaInfo {
+  position: absolute;
+  top: 86.5%;
+  left: 15.5%;
+}
+
+#schwechatButton {
+  position: absolute;
+  top: 32%;
+  left: 18%;
+}
+
+#schwechatInfo {
+  position: absolute;
+  top: 21%;
+  left: 18%;
+}
+
+#debrecenButton {
+  position: absolute;
+  top: 46%;
+  left: 54%;
+}
+
+#debrecenInfo {
+  position: absolute;
+  top: 53.5%;
+  left: 54%;
+}
+
+#kapolnaButton {
+  position: absolute;
+  top: 36%;
+  left: 46%;
+}
+
+#kapolnaInfo {
+  position: absolute;
+  top: 27.5%;
+  left: 46%;
+}
+
+#segesvarButton {
+  position: absolute;
+  top: 75%;
+  left: 78%;
+}
+
+#segesvarInfo {
+  position: absolute;
+  top: 68.5%;
+  left: 54%;
+}
+
+#vilagosButton {
+  position: absolute;
+  top: 82%;
+  left: 54%;
+}
+
+#vilagosInfo {
+  position: absolute;
+  top: 73.5%;
+  left: 54%;
+}

@@ -39,8 +39,8 @@ function kepbalra() {
 
 function balraMozgas() {
   
-  if(aktualkep != "folyoso-1" && aktualkep != "folyoso0" 
-  && aktualkep != "folyoso1" && aktualkep != "folyoso2"  && aktualkep != "aula" && aktualkep != "folyoso3"){
+  if(imgName != "folyoso-1.jpg" && imgName != "folyoso0.jpg" 
+  && imgName != "folyoso1.jpg" && imgName != "folyoso2.jpg"  && imgName != "aula.jpg" && imgName != "folyoso3.jpg"){
     if (elmozgas < 750) {
       elmozgas+=5;
       var mozgatas = elmozgas + "px";

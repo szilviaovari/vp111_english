@@ -1,5 +1,8 @@
 name: Optimize images
-on: pull_request
+on:
+  push:
+    branches:
+      - "11b-panorama-fixed"
 jobs:
   build:
     name: calibreapp/image-actions

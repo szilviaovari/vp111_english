@@ -23,9 +23,39 @@ body{
     text-align: center;
 }
 
+.footer-text {
+    color: #808080;
+}
+
+.footer-icon:hover>i {
+    -webkit-animation-name: fa-fade;
+    animation-name: fa-fade;
+-webkit-animation-delay: var(--fa-animation-delay, 0s);
+    animation-delay: var(--fa-animation-delay, 0s);
+-webkit-animation-direction: var(--fa-animation-direction, normal);
+    animation-direction: var(--fa-animation-direction, normal);
+-webkit-animation-duration: var(--fa-animation-duration, 2s);
+    animation-duration: var(--fa-animation-duration, 2s);
+-webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+    animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+-webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 2));
+    animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 2));
+}
+
 .btn{
     color: white;
     width: 50%;
+}
+
+#vp-logo > img {
+    height: 7.5vh;
+    padding-bottom: 10px;
+    transition: .25s;
+    display: inline;
+}
+
+#vp-logo > img:hover {
+    transform: scale(1.03);
 }
 
 .btn-fooldal {
@@ -181,4 +211,15 @@ img{
     background-color: #994779;
     padding: 10px 20px;
     border-radius: 25px; 
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    /*text-transform: italic;*/
+    font-style: italic;
+}
+
+a:hover {
+    color: whitesmoke;
 }

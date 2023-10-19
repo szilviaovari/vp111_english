@@ -8,7 +8,7 @@ function teljeskepnyit(kep) {
   console.log(szepkapva, szetkapva2, fajlnevszama);
   console.log(kep)
 
-  let imgPath = location.origin + "/11b/public/files/panorama/";
+  let imgPath = location.origin + "/public/files/panorama/";
   var imgName = kep.split(imgPath)[1];
   console.log(imgPath + imgName);
 

@@ -5,12 +5,9 @@ function teljeskepnyit(kep) {
   var szepkapva = kep.split(".");
   var szetkapva2 = szepkapva[0].split("/");
   var fajlnevszama = szetkapva2.length;
-  console.log(szepkapva, szetkapva2, fajlnevszama);
-  console.log(kep)
 
   let imgPath = location.origin + "/public/files/panorama/";
   var imgName = kep.split(imgPath)[1];
-  console.log(imgPath + imgName);
 
   aktualkep = szetkapva2[fajlnevszama - 1];
   if (

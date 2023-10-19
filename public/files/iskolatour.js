@@ -11,11 +11,11 @@ function teljeskepnyit(kep) {
 
   aktualkep = szetkapva2[fajlnevszama - 1];
   if (
-    imgName == "folyoso-1.jpg" ||
-    imgName == "folyoso0.jpg" ||
-    imgName == "folyoso1.jpg" ||
-    imgName == "folyoso2.jpg" ||
-    imgName == "aula.jpg"
+    szetkapva2[fajlnevszama - 1] == "folyoso-1" ||
+    szetkapva2[fajlnevszama - 1] == "folyoso0" ||
+    szetkapva2[fajlnevszama - 1] == "folyoso1" ||
+    szetkapva2[fajlnevszama - 1] == "folyoso2" ||
+    szetkapva2[fajlnevszama - 1] == "aula"
   ) {
     document.getElementById("teljeskep").src = imgPath + imgName
   } else {
@@ -39,38 +39,28 @@ function kepbalra() {
 
 function balraMozgas() {
   
-  if(imgName != "folyoso-1.jpg" && imgName != "folyoso0.jpg" 
-  && imgName != "folyoso1.jpg" && imgName != "folyoso2.jpg"  && imgName != "aula.jpg" && imgName != "folyoso3.jpg"){
+  if(aktualkep != "folyoso-1" && aktualkep != "folyoso0" 
+  && aktualkep != "folyoso1" && aktualkep != "folyoso2"  && aktualkep != "aula" && aktualkep != "folyoso3"){
     if (elmozgas < 750) {
       elmozgas+=5;
       var mozgatas = elmozgas + "px";
       document.getElementById('teljeskep').style.objectPosition = mozgatas;
-
-
       timeoutID = setTimeout(balraMozgas, 1);
   }}
 }
-
 function kepvisszaJ() {
   clearTimeout(timeoutID);
 }
-
-
-
 function kepjobbra() {
   jobbraMozgas();
 }
-
 function jobbraMozgas() {
-
-  if(imgName != "folyoso-1.jpg" && imgName != "folyoso0.jpg" 
-  && imgName != "folyoso1.jpg" && imgName != "folyoso2.jpg"  && imgName != "aula.jpg" && imgName != "folyoso3.jpg"){
+  if(aktualkep != "folyoso-1" && aktualkep != "folyoso0" 
+  && aktualkep != "folyoso1" && aktualkep != "folyoso2" && aktualkep != "aula" && aktualkep != "folyoso3"){
   if (elmozgas > -750) {
     elmozgas-=5;
     var mozgatas = elmozgas + "px";
     document.getElementById('teljeskep').style.objectPosition = mozgatas;
-
-
     timeoutID = setTimeout(jobbraMozgas, 1);
   }
 

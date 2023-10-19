@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/style/iskolatour.css">
+    <script src="../../public/files/iskolatour.js"></script>
+    <title>Vasvári 111 - Első emelet</title>
+</head>
+<body>
+    <a href="../../"><div id="visszaGomb">Vissza a főoldalra</div></a>
+    <h1>A Vasvári első emelete</h1>
+
+    <div  id="teljeskepkeret">
+        <img src="" id="teljeskep" >
+        <span id="kilep" onclick="teljeskepzar()">X</span>
+        <span id="balra" onmouseover="kepbalra()" onmouseleave="kepvisszaJ()"><</span>
+        <span id="jobbra" onmouseover="kepjobbra()" onmouseleave="kepvisszaB()">></span>
+    </div>
+
+    <div class="elem">
+        <label for="_30">30. terem</label>
+        <img src="../../public/files/panorama/_30.jpg"  class="terem" id="_30" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_31">31. terem</label>
+        <img src="../../public/files/panorama/_31.jpg"  class="terem" id="_31" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="_32">32. terem</label>
+        <img src="../../public/files/panorama/_32.jpg"  class="terem" id="_32" onclick="teljeskepnyit(this.src)">
+    </div >
+
+    <div class="elem">
+    <label for="_34">34. terem</label>
+    <img src="../../public/files/panorama/_34.jpg" class="terem" id="_34" onclick="teljeskepnyit(this.src)">
+    </div>
+    
+    <div class="elem">
+        <label for="_35">35. terem</label>
+        <img src="../../public/files/panorama/_35.jpg"  class="terem" id="_35" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="tesiterem">Testnevelés terem</label>
+        <img src="../../public/files/panorama/tesiterem.jpg"  class="terem" id="tesiterem" onclick="teljeskepnyit(this.src)">
+    </div>
+    
+    <div class="elem">
+        <label for="lepcsofoldszint">Lépcső a földszint felé</label>
+        <a href="../">
+        <img src="../../public/files/panorama/elso-fold.jpg"  class="terem" id="lepcsofoldszint" >
+        </a>
+    </div>
+
+    <div class="elem">
+        <label for="folyoso1">Első emeleti folyosó</label>
+        <img src="../../public/files/panorama/folyoso1.jpg"  class="terem" id="folyoso1" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="lepcso2emelet">Lépcső a 2. emelet felé</label>
+        <a href="../masodikemelet">
+        <img src="../../public/files/panorama/elso-masodik.jpg"  class="terem" id="lepcso2emelet" >
+        </a>
+    </div>
+
+    
+</body>
+</html>

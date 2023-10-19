@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/style/iskolatour.css">
+    <script src="../../public/files/iskolatour.js"></script>
+    <title>Vasvári 111 - Pince</title>
+</head>
+<body>
+    <a href="../../"><div id="visszaGomb">Vissza a főoldalra</div></a>
+    <h1>A Vasvári pincéje</h1>
+    
+
+    <div  id="teljeskepkeret">
+        <img src="" id="teljeskep" >
+        <span id="kilep" onclick="teljeskepzar()">X</span>
+        <span id="balra" onmouseover="kepbalra()" onmouseleave="kepvisszaJ()"><</span>
+        <span id="jobbra" onmouseover="kepjobbra()" onmouseleave="kepvisszaB()">></span>
+    </div>
+
+    <div class="elem">
+        <label for="k1">K1-es terem</label>
+        <img src="../../public/files/panorama/k1.jpg" class="terem" id="k1" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="k2">K2-es terem</label>
+        <img src="../../public/files/panorama/k2.jpg"  class="terem" id="k2" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="k3">K3-as terem</label>
+        <img src="../../public/files/panorama/k3.jpg"  class="terem" id="k3" onclick="teljeskepnyit(this.src)">
+    </div >
+
+    <div class="elem">
+        <label for="folyosop">A pince folyosója</label>
+        <img src="../../public/files/panorama/folyoso-1.jpg"  class="terem" id="folyosop" onclick="teljeskepnyit(this.src)">
+    </div>
+
+    <div class="elem">
+        <label for="lepcsofoldszint1">Lépcső a földszint felé</label>
+        <a href="../">
+        <img src="../../public/files/panorama/pince-foldszint.jpg"  class="terem" id="lepcsofoldszint1" >
+        </a>
+    </div>
+
+    
+</body>
+</html>

@@ -11,11 +11,11 @@ function teljeskepnyit(kep) {
 
   aktualkep = szetkapva2[fajlnevszama - 1];
   if (
-    imgName == "folyoso-1" ||
-    imgName == "folyoso0" ||
-    imgName == "folyoso1" ||
-    imgName == "folyoso2" ||
-    imgName == "aula"
+    imgName == "folyoso-1.jpg" ||
+    imgName == "folyoso0.jpg" ||
+    imgName == "folyoso1.jpg" ||
+    imgName == "folyoso2.jpg" ||
+    imgName == "aula.jpg"
   ) {
     document.getElementById("teljeskep").src = imgPath + imgName
   } else {

@@ -28,12 +28,12 @@ window.onload = () => {
 function checkScreenResolution() {
   var screenWidth = window.screen.width;
   var screenHeight = window.screen.height;
-  if (screenWidth < 1920 || screenHeight < 1080 || screenWidth + screenHeight < 3000 || screenWidth - screenHeight < 840) {
-      alert("Túl alacsony a kijelződ felbontása. Kérlek használj 1920x1080-as felbontást.");
+  if (screenWidth%16!=0 || screenHeight%9!=0) {
+      alert("Túl alacsony a kijelződ felbontása. Kérlek használj 16:9-es képarányt.");
       window.location.href = "../";
   }
-  if (screenWidth > 1920 || screenHeight > 1080 || screenWidth + screenHeight > 3000 || screenWidth - screenHeight > 840) {
-    alert("Túl magas a kijelződ felbontása. Kérlek használj 1920x1080-as felbontást.");
+  if (screenWidth%16!=0 || screenHeight%9!=0) {
+    alert("Túl magas a kijelződ felbontása. Kérlek használj 16:9-es képarányt.");
     window.location.href = "../";
 }
 }
@@ -49,8 +49,8 @@ function checkBrowserZoom() {
 function checkWindowSize() {
   var windowWidth = window.innerWidth;
   var windowHeight = window.innerHeight;
-  if (windowWidth < 1920) {
-      alert("A böngésződ ablaka nem egyezik az elvártakkal. Kérlek használj 1920x1080-as felbontást és nagyítsd ki a böngésződ ablakát!");
+  if (windowWidth%16!=0) {
+      alert("A böngésződ ablaka nem egyezik az elvártakkal. Kérlek használj 16:9-es képarányt és nagyítsd ki a böngésződ ablakát!");
       window.location.href = "../";
   }
 }
